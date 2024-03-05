@@ -1,0 +1,438 @@
+\doxysection{Graph\texorpdfstring{$<$}{<} T \texorpdfstring{$>$}{>} Class Template Reference}
+\hypertarget{class_graph}{}\label{class_graph}\index{Graph$<$ T $>$@{Graph$<$ T $>$}}
+
+
+{\ttfamily \#include $<$Graph.\+h$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_vertex}{Vertex}}$<$ \mbox{\hyperlink{class_edge}{T}} $>$ \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_graph_a8b7b7465fbfd562e2a469f90a437ab75}{find\+Vertex}} (\mbox{\hyperlink{class_edge}{const}} \mbox{\hyperlink{class_edge}{T}} \&\mbox{\hyperlink{class_edge}{in}}) \mbox{\hyperlink{class_edge}{const}}
+\item 
+\mbox{\hyperlink{class_edge}{bool}} \mbox{\hyperlink{class_graph_a00be284ea2be3b3d0f0d2e493b70245b}{add\+Vertex}} (\mbox{\hyperlink{class_edge}{const}} \mbox{\hyperlink{class_edge}{T}} \&\mbox{\hyperlink{class_edge}{in}})
+\item 
+\mbox{\hyperlink{class_edge}{bool}} \mbox{\hyperlink{class_graph_a56c89f89bc25e94d01e64cc3ffda4036}{add\+Edge}} (\mbox{\hyperlink{class_edge}{const}} \mbox{\hyperlink{class_edge}{T}} \&\mbox{\hyperlink{class_edge}{sourc}}, \mbox{\hyperlink{class_edge}{const}} \mbox{\hyperlink{class_edge}{T}} \&dest, \mbox{\hyperlink{class_airline}{Airline}} \mbox{\hyperlink{class_edge}{w}})
+\item 
+\mbox{\hyperlink{class_edge}{vector}}$<$ \mbox{\hyperlink{class_vertex}{Vertex}}$<$ \mbox{\hyperlink{class_edge}{T}} $>$ \texorpdfstring{$\ast$}{*} $>$ \mbox{\hyperlink{class_graph_a923b43995f81ad9319bbc81a1e433e64}{get\+Vertex\+Set}} () \mbox{\hyperlink{class_edge}{const}}
+\item 
+\mbox{\hyperlink{class_edge}{vector}}$<$ \mbox{\hyperlink{class_edge}{T}} $>$ \mbox{\hyperlink{class_graph_a911798b1a89f8c4ae90ba3eee849cff8}{dfs}} () \mbox{\hyperlink{class_edge}{const}}
+\item 
+\mbox{\hyperlink{class_edge}{vector}}$<$ \mbox{\hyperlink{class_edge}{T}} $>$ \mbox{\hyperlink{class_graph_a510522c8221b321a82e687fe2f2cb484}{dfs}} (\mbox{\hyperlink{class_edge}{const}} \mbox{\hyperlink{class_edge}{T}} \&\mbox{\hyperlink{class_edge}{source}}) \mbox{\hyperlink{class_edge}{const}}
+\item 
+\mbox{\hyperlink{class_edge}{vector}}$<$ \mbox{\hyperlink{class_edge}{T}} $>$ \mbox{\hyperlink{class_graph_aa47a4130165550e208e7a063fce6983a}{bfs}} (\mbox{\hyperlink{class_edge}{const}} \mbox{\hyperlink{class_edge}{T}} \&\mbox{\hyperlink{class_edge}{source}}) \mbox{\hyperlink{class_edge}{const}}
+\item 
+\mbox{\hyperlink{class_edge}{vector}}$<$ \mbox{\hyperlink{class_edge}{vector}}$<$ \mbox{\hyperlink{class_edge}{T}} $>$ $>$ \mbox{\hyperlink{class_graph_aeb439223ce89297cc31e90a9e680b2af}{caminhos\+Djiskra}} (\mbox{\hyperlink{class_edge}{const}} \mbox{\hyperlink{class_edge}{T}} \&\mbox{\hyperlink{class_edge}{source}}, \mbox{\hyperlink{class_edge}{const}} \mbox{\hyperlink{class_edge}{T}} \&\mbox{\hyperlink{class_edge}{destination}}) \mbox{\hyperlink{class_edge}{const}}
+\item 
+\mbox{\hyperlink{class_edge}{void}} \mbox{\hyperlink{class_graph_ae52985e28e98d009399f3f397a15a29e}{construir\+Caminhos}} (\mbox{\hyperlink{class_vertex}{Vertex}}$<$ \mbox{\hyperlink{class_edge}{T}} $>$ \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{class_edge}{source}}, \mbox{\hyperlink{class_vertex}{Vertex}}$<$ \mbox{\hyperlink{class_edge}{T}} $>$ \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{class_edge}{destination}}, \mbox{\hyperlink{class_edge}{const}} \mbox{\hyperlink{class_edge}{unordered\+\_\+map}}$<$ \mbox{\hyperlink{class_vertex}{Vertex}}$<$ \mbox{\hyperlink{class_edge}{T}} $>$ \texorpdfstring{$\ast$}{*}, \mbox{\hyperlink{class_edge}{vector}}$<$ \mbox{\hyperlink{class_vertex}{Vertex}}$<$ \mbox{\hyperlink{class_edge}{T}} $>$ \texorpdfstring{$\ast$}{*} $>$ $>$ \&\mbox{\hyperlink{class_edge}{predecessors}}, \mbox{\hyperlink{class_edge}{vector}}$<$ \mbox{\hyperlink{class_edge}{T}} $>$ \&\mbox{\hyperlink{class_edge}{current\+Path}}, \mbox{\hyperlink{class_edge}{vector}}$<$ \mbox{\hyperlink{class_edge}{vector}}$<$ \mbox{\hyperlink{class_edge}{T}} $>$ $>$ \&\mbox{\hyperlink{class_edge}{paths}}) \mbox{\hyperlink{class_edge}{const}}
+\item 
+\mbox{\hyperlink{class_edge}{vector}}$<$ \mbox{\hyperlink{class_edge}{vector}}$<$ \mbox{\hyperlink{class_edge}{pair}}$<$ \mbox{\hyperlink{class_vertex}{Vertex}}$<$ \mbox{\hyperlink{class_edge}{T}} $>$ \texorpdfstring{$\ast$}{*}, \mbox{\hyperlink{class_edge}{Edge}}$<$ \mbox{\hyperlink{class_edge}{T}} $>$ $>$ $>$ $>$ \mbox{\hyperlink{class_graph_a1891594421d889840d0dddbe54704723}{caminhos\+Djiskra\+Edges}} (\mbox{\hyperlink{class_edge}{const}} \mbox{\hyperlink{class_edge}{T}} \&\mbox{\hyperlink{class_edge}{source}}, \mbox{\hyperlink{class_edge}{const}} \mbox{\hyperlink{class_edge}{T}} \&\mbox{\hyperlink{class_edge}{destination}}) \mbox{\hyperlink{class_edge}{const}}
+\item 
+\mbox{\hyperlink{class_edge}{void}} \mbox{\hyperlink{class_graph_a961ec28ac879828ef886ef91e4232683}{construir\+Caminhos\+Edges}} (\mbox{\hyperlink{class_vertex}{Vertex}}$<$ \mbox{\hyperlink{class_edge}{T}} $>$ \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{class_edge}{source}}, \mbox{\hyperlink{class_vertex}{Vertex}}$<$ \mbox{\hyperlink{class_edge}{T}} $>$ \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{class_edge}{destination}}, \mbox{\hyperlink{class_edge}{const}} \mbox{\hyperlink{class_edge}{unordered\+\_\+map}}$<$ \mbox{\hyperlink{class_vertex}{Vertex}}$<$ \mbox{\hyperlink{class_edge}{T}} $>$ \texorpdfstring{$\ast$}{*}, \mbox{\hyperlink{class_edge}{vector}}$<$ \mbox{\hyperlink{class_edge}{pair}}$<$ \mbox{\hyperlink{class_vertex}{Vertex}}$<$ \mbox{\hyperlink{class_edge}{T}} $>$ \texorpdfstring{$\ast$}{*}, \mbox{\hyperlink{class_edge}{Edge}}$<$ \mbox{\hyperlink{class_edge}{T}} $>$ $>$ $>$ $>$ \&\mbox{\hyperlink{class_edge}{predecessors}}, \mbox{\hyperlink{class_edge}{vector}}$<$ \mbox{\hyperlink{class_edge}{pair}}$<$ \mbox{\hyperlink{class_vertex}{Vertex}}$<$ \mbox{\hyperlink{class_edge}{T}} $>$ \texorpdfstring{$\ast$}{*}, \mbox{\hyperlink{class_edge}{Edge}}$<$ \mbox{\hyperlink{class_edge}{T}} $>$ $>$ $>$ \&\mbox{\hyperlink{class_edge}{current\+Path}}, \mbox{\hyperlink{class_edge}{vector}}$<$ \mbox{\hyperlink{class_edge}{vector}}$<$ \mbox{\hyperlink{class_edge}{pair}}$<$ \mbox{\hyperlink{class_vertex}{Vertex}}$<$ \mbox{\hyperlink{class_edge}{T}} $>$ \texorpdfstring{$\ast$}{*}, \mbox{\hyperlink{class_edge}{Edge}}$<$ \mbox{\hyperlink{class_edge}{T}} $>$ $>$ $>$ $>$ \&\mbox{\hyperlink{class_edge}{paths}}) \mbox{\hyperlink{class_edge}{const}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_graph_a56c89f89bc25e94d01e64cc3ffda4036}\label{class_graph_a56c89f89bc25e94d01e64cc3ffda4036} 
+\index{Graph$<$ T $>$@{Graph$<$ T $>$}!addEdge@{addEdge}}
+\index{addEdge@{addEdge}!Graph$<$ T $>$@{Graph$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{addEdge()}{addEdge()}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{class_edge}{class}} \mbox{\hyperlink{class_edge}{T}} $>$ \\
+\mbox{\hyperlink{class_edge}{bool}} \mbox{\hyperlink{class_graph}{Graph}}$<$ \mbox{\hyperlink{class_edge}{T}} $>$\+::add\+Edge (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_edge}{const}} \mbox{\hyperlink{class_edge}{T}} \&}]{sourc,  }\item[{\mbox{\hyperlink{class_edge}{const}} \mbox{\hyperlink{class_edge}{T}} \&}]{dest,  }\item[{\mbox{\hyperlink{class_airline}{Airline}}}]{w }\end{DoxyParamCaption})}
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00188\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00189\ \ \ \ \ \textcolor{keyword}{auto}\ \mbox{\hyperlink{class_edge}{v1}}\ =\ \mbox{\hyperlink{class_graph_a8b7b7465fbfd562e2a469f90a437ab75}{findVertex}}(\mbox{\hyperlink{class_edge}{sourc}});}
+\DoxyCodeLine{00190\ \ \ \ \ \textcolor{keyword}{auto}\ \mbox{\hyperlink{class_edge}{v2}}\ =\ \mbox{\hyperlink{class_graph_a8b7b7465fbfd562e2a469f90a437ab75}{findVertex}}(dest);}
+\DoxyCodeLine{00191\ \ \ \ \ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{class_edge}{v1}}\ ==\ \mbox{\hyperlink{class_edge}{NULL}}\ ||\ \mbox{\hyperlink{class_edge}{v2}}\ ==\ \mbox{\hyperlink{class_edge}{NULL}})}
+\DoxyCodeLine{00192\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{false};}
+\DoxyCodeLine{00193\ \ \ \ \ \mbox{\hyperlink{class_edge}{v1}}-\/>addEdge(\mbox{\hyperlink{class_edge}{v2}},\mbox{\hyperlink{class_edge}{w}});}
+\DoxyCodeLine{00194\ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{true};}
+\DoxyCodeLine{00195\ \}}
+
+\end{DoxyCode}
+\Hypertarget{class_graph_a00be284ea2be3b3d0f0d2e493b70245b}\label{class_graph_a00be284ea2be3b3d0f0d2e493b70245b} 
+\index{Graph$<$ T $>$@{Graph$<$ T $>$}!addVertex@{addVertex}}
+\index{addVertex@{addVertex}!Graph$<$ T $>$@{Graph$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{addVertex()}{addVertex()}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{class_edge}{class}} \mbox{\hyperlink{class_edge}{T}} $>$ \\
+\mbox{\hyperlink{class_edge}{bool}} \mbox{\hyperlink{class_graph}{Graph}}$<$ \mbox{\hyperlink{class_edge}{T}} $>$\+::add\+Vertex (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_edge}{const}} \mbox{\hyperlink{class_edge}{T}} \&}]{in }\end{DoxyParamCaption})}
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00178\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00179\ \ \ \ \ \textcolor{keywordflow}{if}\ (\ \mbox{\hyperlink{class_graph_a8b7b7465fbfd562e2a469f90a437ab75}{findVertex}}(\mbox{\hyperlink{class_edge}{in}})\ !=\ \mbox{\hyperlink{class_edge}{NULL}})}
+\DoxyCodeLine{00180\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{false};}
+\DoxyCodeLine{00181\ \ \ \ \ vertexSet.push\_back(\textcolor{keyword}{new}\ \mbox{\hyperlink{class_edge}{Vertex<T>}}(\mbox{\hyperlink{class_edge}{in}}));}
+\DoxyCodeLine{00182\ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{true};}
+\DoxyCodeLine{00183\ \}}
+
+\end{DoxyCode}
+\Hypertarget{class_graph_aa47a4130165550e208e7a063fce6983a}\label{class_graph_aa47a4130165550e208e7a063fce6983a} 
+\index{Graph$<$ T $>$@{Graph$<$ T $>$}!bfs@{bfs}}
+\index{bfs@{bfs}!Graph$<$ T $>$@{Graph$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{bfs()}{bfs()}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{class_edge}{class}} \mbox{\hyperlink{class_edge}{T}} $>$ \\
+\mbox{\hyperlink{class_edge}{vector}}$<$ \mbox{\hyperlink{class_edge}{T}} $>$ \mbox{\hyperlink{class_graph}{Graph}}$<$ \mbox{\hyperlink{class_edge}{T}} $>$\+::bfs (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_edge}{const}} \mbox{\hyperlink{class_edge}{T}} \&}]{source }\end{DoxyParamCaption}) const}
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00249\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00250\ \ \ \ \ \mbox{\hyperlink{class_edge}{vector<T>}}\ \mbox{\hyperlink{class_edge}{res}};}
+\DoxyCodeLine{00251\ }
+\DoxyCodeLine{00252\ \ \ \ \ \textcolor{keywordflow}{for}\ (\textcolor{keyword}{auto}\ \mbox{\hyperlink{class_edge}{v}}:\ vertexSet)\{}
+\DoxyCodeLine{00253\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_edge}{v}}-\/>setVisited(\textcolor{keyword}{false});}
+\DoxyCodeLine{00254\ \ \ \ \ \}}
+\DoxyCodeLine{00255\ }
+\DoxyCodeLine{00256\ \ \ \ \ \mbox{\hyperlink{class_edge}{Vertex<T>}}*\ \mbox{\hyperlink{class_edge}{v}}\ =\ \mbox{\hyperlink{class_graph_a8b7b7465fbfd562e2a469f90a437ab75}{findVertex}}(\mbox{\hyperlink{class_edge}{source}});}
+\DoxyCodeLine{00257\ \ \ \ \ \mbox{\hyperlink{class_edge}{queue<Vertex<T>}}*>\ \mbox{\hyperlink{class_edge}{toVisit}}\ =\ \{\};}
+\DoxyCodeLine{00258\ \ \ \ \ \mbox{\hyperlink{class_edge}{toVisit}}.push(\mbox{\hyperlink{class_edge}{v}});}
+\DoxyCodeLine{00259\ \ \ \ \ \mbox{\hyperlink{class_edge}{v}}-\/>setVisited(\textcolor{keyword}{true});}
+\DoxyCodeLine{00260\ \ \ \ \ \mbox{\hyperlink{class_edge}{res}}.push\_back(\mbox{\hyperlink{class_edge}{v}}-\/>getInfo());}
+\DoxyCodeLine{00261\ }
+\DoxyCodeLine{00262\ \ \ \ \ \textcolor{keywordflow}{while}\ (!\mbox{\hyperlink{class_edge}{toVisit}}.empty())\{}
+\DoxyCodeLine{00263\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_edge}{v}}\ =\ \mbox{\hyperlink{class_edge}{toVisit}}.front();}
+\DoxyCodeLine{00264\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_edge}{toVisit}}.pop();}
+\DoxyCodeLine{00265\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{for}\ (\textcolor{keyword}{auto}\ \mbox{\hyperlink{class_edge}{it}}\ =\ \mbox{\hyperlink{class_edge}{v}}-\/>getAdj().begin();\ \mbox{\hyperlink{class_edge}{it}}\ !=\ \mbox{\hyperlink{class_edge}{v}}-\/>getAdj().end();\mbox{\hyperlink{class_edge}{it}}++)\{}
+\DoxyCodeLine{00266\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (!(*it).getDest()-\/>isVisited())\{}
+\DoxyCodeLine{00267\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_edge}{toVisit}}.push((*it).getDest());}
+\DoxyCodeLine{00268\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ (*it).\mbox{\hyperlink{class_edge_a9a2de066dff8513dd788d553fc1d0c81}{getDest}}()-\/>setVisited(\textcolor{keyword}{true});}
+\DoxyCodeLine{00269\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_edge}{res}}.push\_back((*it).getDest()-\/>getInfo());}
+\DoxyCodeLine{00270\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00271\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00272\ \ \ \ \ \}}
+\DoxyCodeLine{00273\ }
+\DoxyCodeLine{00274\ }
+\DoxyCodeLine{00275\ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{class_edge}{res}};}
+\DoxyCodeLine{00276\ \}}
+
+\end{DoxyCode}
+\Hypertarget{class_graph_aeb439223ce89297cc31e90a9e680b2af}\label{class_graph_aeb439223ce89297cc31e90a9e680b2af} 
+\index{Graph$<$ T $>$@{Graph$<$ T $>$}!caminhosDjiskra@{caminhosDjiskra}}
+\index{caminhosDjiskra@{caminhosDjiskra}!Graph$<$ T $>$@{Graph$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{caminhosDjiskra()}{caminhosDjiskra()}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{class_edge}{class}} \mbox{\hyperlink{class_edge}{T}} $>$ \\
+\mbox{\hyperlink{class_edge}{vector}}$<$ \mbox{\hyperlink{class_edge}{vector}}$<$ \mbox{\hyperlink{class_edge}{T}} $>$ $>$ \mbox{\hyperlink{class_graph}{Graph}}$<$ \mbox{\hyperlink{class_edge}{T}} $>$\+::caminhos\+Djiskra (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_edge}{const}} \mbox{\hyperlink{class_edge}{T}} \&}]{source,  }\item[{\mbox{\hyperlink{class_edge}{const}} \mbox{\hyperlink{class_edge}{T}} \&}]{destination }\end{DoxyParamCaption}) const}
+
+Dijkstra\textquotesingle{}s algorithm to find all minimum paths in a graph. Modified to return only the minimum paths between the source and the destination.
+
+
+\begin{DoxyParams}{Parameters}
+{\em source} & -\/ The origin from which paths are determined. \\
+\hline
+{\em destination} & -\/ The destination up to which paths are determined. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Vector containing the minimum paths from the source to the destination. If either the source or destination vertex is not found, it returns an empty vector.
+\end{DoxyReturn}
+This function has a time complexity of O((V+E)logV) 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00294\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00295\ }
+\DoxyCodeLine{00296\ \ \ \ \ \textcolor{comment}{//declaração\ de\ variáveis}}
+\DoxyCodeLine{00297\ \ \ \ \ \mbox{\hyperlink{class_edge}{unordered\_map<Vertex<T>}}*,\ \textcolor{keywordtype}{int}>\ \mbox{\hyperlink{class_edge}{distance}};}
+\DoxyCodeLine{00298\ \ \ \ \ \mbox{\hyperlink{class_edge}{unordered\_map<Vertex<T>}}*,\ \mbox{\hyperlink{class_edge}{vector<Vertex<T>}}*>>\ \mbox{\hyperlink{class_edge}{predecessors}};}
+\DoxyCodeLine{00299\ \ \ \ \ \mbox{\hyperlink{class_edge}{vector<vector<T>}}>\ \mbox{\hyperlink{class_edge}{paths}};}
+\DoxyCodeLine{00300\ }
+\DoxyCodeLine{00301\ \ \ \ \ \mbox{\hyperlink{class_edge}{Vertex<T>}}*\ \mbox{\hyperlink{class_edge}{sourceVertex}}\ =\ \mbox{\hyperlink{class_graph_a8b7b7465fbfd562e2a469f90a437ab75}{findVertex}}(\mbox{\hyperlink{class_edge}{source}});}
+\DoxyCodeLine{00302\ \ \ \ \ \mbox{\hyperlink{class_edge}{Vertex<T>}}*\ \mbox{\hyperlink{class_edge}{destVertex}}\ =\ \mbox{\hyperlink{class_graph_a8b7b7465fbfd562e2a469f90a437ab75}{findVertex}}(\mbox{\hyperlink{class_edge}{destination}});}
+\DoxyCodeLine{00303\ }
+\DoxyCodeLine{00304\ \ \ \ \ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{class_edge}{sourceVertex}}\ ==\ \textcolor{keyword}{nullptr}\ ||\ \mbox{\hyperlink{class_edge}{destVertex}}\ ==\ \textcolor{keyword}{nullptr})}
+\DoxyCodeLine{00305\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{class_edge}{paths}};}
+\DoxyCodeLine{00306\ }
+\DoxyCodeLine{00307\ }
+\DoxyCodeLine{00308\ \ \ \ \ \textcolor{comment}{//\ Inicialização\ das\ distâncias\ e\ predecessores}}
+\DoxyCodeLine{00309\ \ \ \ \ \textcolor{keywordflow}{for}\ (\textcolor{keyword}{auto}\ \mbox{\hyperlink{class_edge}{vertex}}\ :\ vertexSet)\ \{}
+\DoxyCodeLine{00310\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_edge}{distance}}[\mbox{\hyperlink{class_edge}{vertex}}]\ =\ \mbox{\hyperlink{class_edge_a15b7017ce7b7cac044d8422727e2bf77}{numeric\_limits<int>::max}}();}
+\DoxyCodeLine{00311\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_edge}{predecessors}}[\mbox{\hyperlink{class_edge}{vertex}}]\ =\ \mbox{\hyperlink{class_edge}{vector<Vertex<T>}}*>();}
+\DoxyCodeLine{00312\ \ \ \ \ \}}
+\DoxyCodeLine{00313\ \ \ \ \ \mbox{\hyperlink{class_edge}{distance}}[\mbox{\hyperlink{class_edge}{sourceVertex}}]\ =\ 0;}
+\DoxyCodeLine{00314\ }
+\DoxyCodeLine{00315\ \ \ \ \ \textcolor{comment}{//queue\ prioritária\ para\ organizar\ vertices\ em\ ordem\ crescente\ de\ distancia\ atravez\ do\ greater<>}}
+\DoxyCodeLine{00316\ \ \ \ \ \mbox{\hyperlink{class_edge}{priority\_queue<pair<int,\ Vertex<T>}}*>,\ \mbox{\hyperlink{class_edge}{vector<pair<int,\ Vertex<T>}}*>>,\ \mbox{\hyperlink{class_edge}{greater<pair<int,\ Vertex<T>}}*>>>\ \mbox{\hyperlink{class_edge}{pq}};}
+\DoxyCodeLine{00317\ \ \ \ \ \mbox{\hyperlink{class_edge}{pq}}.push(\mbox{\hyperlink{class_edge}{make\_pair}}(0,\ \mbox{\hyperlink{class_edge}{sourceVertex}}));\ \textcolor{comment}{//colocar\ a\ fonte\ na\ pq}}
+\DoxyCodeLine{00318\ }
+\DoxyCodeLine{00319\ }
+\DoxyCodeLine{00320\ \ \ \ \ \textcolor{comment}{//Algoritmo\ de\ Dijkstra\ para\ encontrar\ todos\ os\ caminhos}}
+\DoxyCodeLine{00321\ \ \ \ \ \textcolor{keywordflow}{while}\ (!\mbox{\hyperlink{class_edge}{pq}}.empty())\ \{}
+\DoxyCodeLine{00322\ \ \ \ \ \ \ \ \ \textcolor{keyword}{auto}\ \mbox{\hyperlink{class_edge}{currentVertex}}\ =\ \mbox{\hyperlink{class_edge}{pq}}.top().second;}
+\DoxyCodeLine{00323\ \ \ \ \ \ \ \ \ \textcolor{keyword}{auto}\ \mbox{\hyperlink{class_edge}{currentDistance}}\ =\ \mbox{\hyperlink{class_edge}{pq}}.top().first;}
+\DoxyCodeLine{00324\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_edge}{pq}}.pop();\ \textcolor{comment}{//retirar\ o\ vertice\ com\ menor\ distancia}}
+\DoxyCodeLine{00325\ }
+\DoxyCodeLine{00326\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{class_edge}{currentDistance}}\ >\ \mbox{\hyperlink{class_edge}{distance}}[\mbox{\hyperlink{class_edge}{currentVertex}}])}
+\DoxyCodeLine{00327\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{continue};}
+\DoxyCodeLine{00328\ }
+\DoxyCodeLine{00329\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{for}\ (\textcolor{keyword}{auto}\ \mbox{\hyperlink{class_edge}{edge}}\ :\ \mbox{\hyperlink{class_edge}{currentVertex}}-\/>getAdj())\ \{}
+\DoxyCodeLine{00330\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{auto}\ \mbox{\hyperlink{class_edge}{neighbor}}\ =\ \mbox{\hyperlink{class_edge}{edge}}.\mbox{\hyperlink{class_edge_a9a2de066dff8513dd788d553fc1d0c81}{getDest}}();}
+\DoxyCodeLine{00331\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_edge}{newDistance}}\ =\ \mbox{\hyperlink{class_edge}{distance}}[\mbox{\hyperlink{class_edge}{currentVertex}}]\ +\ 1;\ \textcolor{comment}{//calcular\ distancia}}
+\DoxyCodeLine{00332\ }
+\DoxyCodeLine{00333\ }
+\DoxyCodeLine{00334\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{class_edge}{newDistance}}\ <\ \mbox{\hyperlink{class_edge}{distance}}[\mbox{\hyperlink{class_edge}{neighbor}}])\ \{}
+\DoxyCodeLine{00335\ }
+\DoxyCodeLine{00336\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_edge}{distance}}[\mbox{\hyperlink{class_edge}{neighbor}}]\ =\ \mbox{\hyperlink{class_edge}{newDistance}};}
+\DoxyCodeLine{00337\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_edge}{predecessors}}[\mbox{\hyperlink{class_edge}{neighbor}}]\ =\ \{\mbox{\hyperlink{class_edge}{currentVertex}}\};}
+\DoxyCodeLine{00338\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_edge}{pq}}.push(\mbox{\hyperlink{class_edge}{make\_pair}}(\mbox{\hyperlink{class_edge}{newDistance}},\ \mbox{\hyperlink{class_edge}{neighbor}}));}
+\DoxyCodeLine{00339\ }
+\DoxyCodeLine{00340\ \ \ \ \ \ \ \ \ \ \ \ \ \}\ \textcolor{keywordflow}{else}\ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{class_edge}{newDistance}}\ ==\ \mbox{\hyperlink{class_edge}{distance}}[\mbox{\hyperlink{class_edge}{neighbor}}])\ \{}
+\DoxyCodeLine{00341\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_edge}{predecessors}}[\mbox{\hyperlink{class_edge}{neighbor}}].push\_back(\mbox{\hyperlink{class_edge}{currentVertex}});}
+\DoxyCodeLine{00342\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00343\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00344\ \ \ \ \ \}}
+\DoxyCodeLine{00345\ }
+\DoxyCodeLine{00346\ \ \ \ \ \textcolor{comment}{//cria\ um\ caminho\ vazio\ e\ chama\ a\ função\ que\ constroi\ apenas\ os\ paths\ desejados}}
+\DoxyCodeLine{00347\ \ \ \ \ \mbox{\hyperlink{class_edge}{vector<T>}}\ \mbox{\hyperlink{class_edge}{currentPath}};}
+\DoxyCodeLine{00348\ \ \ \ \ \mbox{\hyperlink{class_graph_ae52985e28e98d009399f3f397a15a29e}{construirCaminhos}}(\mbox{\hyperlink{class_edge}{sourceVertex}},\ \mbox{\hyperlink{class_edge}{destVertex}},\ \mbox{\hyperlink{class_edge}{predecessors}},\ \mbox{\hyperlink{class_edge}{currentPath}},\ \mbox{\hyperlink{class_edge}{paths}});}
+\DoxyCodeLine{00349\ }
+\DoxyCodeLine{00350\ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{class_edge}{paths}};}
+\DoxyCodeLine{00351\ \}}
+
+\end{DoxyCode}
+\Hypertarget{class_graph_a1891594421d889840d0dddbe54704723}\label{class_graph_a1891594421d889840d0dddbe54704723} 
+\index{Graph$<$ T $>$@{Graph$<$ T $>$}!caminhosDjiskraEdges@{caminhosDjiskraEdges}}
+\index{caminhosDjiskraEdges@{caminhosDjiskraEdges}!Graph$<$ T $>$@{Graph$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{caminhosDjiskraEdges()}{caminhosDjiskraEdges()}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{class_edge}{class}} \mbox{\hyperlink{class_edge}{T}} $>$ \\
+\mbox{\hyperlink{class_edge}{vector}}$<$ \mbox{\hyperlink{class_edge}{vector}}$<$ \mbox{\hyperlink{class_edge}{pair}}$<$ \mbox{\hyperlink{class_vertex}{Vertex}}$<$ \mbox{\hyperlink{class_edge}{T}} $>$ \texorpdfstring{$\ast$}{*}, \mbox{\hyperlink{class_edge}{Edge}}$<$ \mbox{\hyperlink{class_edge}{T}} $>$ $>$ $>$ $>$ \mbox{\hyperlink{class_graph}{Graph}}$<$ \mbox{\hyperlink{class_edge}{T}} $>$\+::caminhos\+Djiskra\+Edges (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_edge}{const}} \mbox{\hyperlink{class_edge}{T}} \&}]{source,  }\item[{\mbox{\hyperlink{class_edge}{const}} \mbox{\hyperlink{class_edge}{T}} \&}]{destination }\end{DoxyParamCaption}) const}
+
+Algorithm similar to the previous one but adapted to filter based on Airlines. It is necessary to have access to vertices to obtain the weight (\doxylink{class_airline}{Airline}) of the respective edges used in the paths. Additionally, it is crucial to have a way to access each edge associated with a vertex.
+
+Operates similarly to the previous algorithm, but modified to associate edges with vertices.
+
+This function has a time complexity of O((V+E)logV).
+
+
+\begin{DoxyParams}{Parameters}
+{\em source} & -\/ The starting vertex from which the paths are initiated. \\
+\hline
+{\em destination} & -\/ The target vertex. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Vector of vectors, where each vector contains pairs of vertices and edges representing a path between source and destination. 
+\end{DoxyReturn}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00413\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00414\ \ \ \ \ \mbox{\hyperlink{class_edge}{unordered\_map<Vertex<T>}}*,\ \textcolor{keywordtype}{int}>\ \mbox{\hyperlink{class_edge}{distance}};}
+\DoxyCodeLine{00415\ \ \ \ \ \mbox{\hyperlink{class_edge}{unordered\_map<Vertex<T>}}*,\ \mbox{\hyperlink{class_edge}{vector<pair<Vertex<T>}}*,\ \mbox{\hyperlink{class_edge}{Edge<T>}}>>>\ \mbox{\hyperlink{class_edge}{anteriores}};}
+\DoxyCodeLine{00416\ \ \ \ \ \mbox{\hyperlink{class_edge}{vector<vector<pair<Vertex<T>}}*,\ \mbox{\hyperlink{class_edge}{Edge<T>}}>>>\ \mbox{\hyperlink{class_edge}{paths}};}
+\DoxyCodeLine{00417\ }
+\DoxyCodeLine{00418\ \ \ \ \ \mbox{\hyperlink{class_edge}{Vertex<T>}}*\ \mbox{\hyperlink{class_edge}{sourceVertex}}\ =\ \mbox{\hyperlink{class_graph_a8b7b7465fbfd562e2a469f90a437ab75}{findVertex}}(\mbox{\hyperlink{class_edge}{source}});}
+\DoxyCodeLine{00419\ \ \ \ \ \mbox{\hyperlink{class_edge}{Vertex<T>}}*\ \mbox{\hyperlink{class_edge}{destVertex}}\ =\ \mbox{\hyperlink{class_graph_a8b7b7465fbfd562e2a469f90a437ab75}{findVertex}}(\mbox{\hyperlink{class_edge}{destination}});}
+\DoxyCodeLine{00420\ }
+\DoxyCodeLine{00421\ \ \ \ \ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{class_edge}{sourceVertex}}\ ==\ \textcolor{keyword}{nullptr}\ ||\ \mbox{\hyperlink{class_edge}{destVertex}}\ ==\ \textcolor{keyword}{nullptr})}
+\DoxyCodeLine{00422\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{class_edge}{paths}};}
+\DoxyCodeLine{00423\ }
+\DoxyCodeLine{00424\ \ \ \ \ \textcolor{keywordflow}{for}\ (\textcolor{keyword}{auto}\ \mbox{\hyperlink{class_edge}{v}}\ :\ vertexSet)\ \{}
+\DoxyCodeLine{00425\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_edge}{distance}}[\mbox{\hyperlink{class_edge}{v}}]\ =\ \mbox{\hyperlink{class_edge_a15b7017ce7b7cac044d8422727e2bf77}{numeric\_limits<int>::max}}();}
+\DoxyCodeLine{00426\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_edge}{anteriores}}[\mbox{\hyperlink{class_edge}{v}}]\ =\ \mbox{\hyperlink{class_edge}{vector<pair<Vertex<T>}}*,\ \mbox{\hyperlink{class_edge}{Edge<T>}}>>();}
+\DoxyCodeLine{00427\ \ \ \ \ \}}
+\DoxyCodeLine{00428\ \ \ \ \ \mbox{\hyperlink{class_edge}{distance}}[\mbox{\hyperlink{class_edge}{sourceVertex}}]\ =\ 0;}
+\DoxyCodeLine{00429\ }
+\DoxyCodeLine{00430\ \ \ \ \ \mbox{\hyperlink{class_edge}{priority\_queue<pair<int,\ Vertex<T>}}*>,\ \mbox{\hyperlink{class_edge}{vector<pair<int,\ Vertex<T>}}*>>,\ \mbox{\hyperlink{class_edge}{greater<pair<int,\ Vertex<T>}}*>>>\ \mbox{\hyperlink{class_edge}{pq}};}
+\DoxyCodeLine{00431\ \ \ \ \ \mbox{\hyperlink{class_edge}{pq}}.push(\mbox{\hyperlink{class_edge}{make\_pair}}(0,\ \mbox{\hyperlink{class_edge}{sourceVertex}}));}
+\DoxyCodeLine{00432\ }
+\DoxyCodeLine{00433\ \ \ \ \ \textcolor{keywordflow}{while}\ (!\mbox{\hyperlink{class_edge}{pq}}.empty())\ \{}
+\DoxyCodeLine{00434\ \ \ \ \ \ \ \ \ \textcolor{keyword}{auto}\ \mbox{\hyperlink{class_edge}{currentVertex}}\ =\ \mbox{\hyperlink{class_edge}{pq}}.top().second;}
+\DoxyCodeLine{00435\ \ \ \ \ \ \ \ \ \textcolor{keyword}{auto}\ \mbox{\hyperlink{class_edge}{currentDistance}}\ =\ \mbox{\hyperlink{class_edge}{pq}}.top().first;}
+\DoxyCodeLine{00436\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_edge}{pq}}.pop();}
+\DoxyCodeLine{00437\ }
+\DoxyCodeLine{00438\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{class_edge}{currentDistance}}\ >\ \mbox{\hyperlink{class_edge}{distance}}[\mbox{\hyperlink{class_edge}{currentVertex}}])}
+\DoxyCodeLine{00439\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{continue};}
+\DoxyCodeLine{00440\ }
+\DoxyCodeLine{00441\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{for}\ (\textcolor{keyword}{auto}\ \mbox{\hyperlink{class_edge}{edge}}\ :\ \mbox{\hyperlink{class_edge}{currentVertex}}-\/>getAdj())\ \{}
+\DoxyCodeLine{00442\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{auto}\ \mbox{\hyperlink{class_edge}{neighbor}}\ =\ \mbox{\hyperlink{class_edge}{edge}}.\mbox{\hyperlink{class_edge_a9a2de066dff8513dd788d553fc1d0c81}{getDest}}();}
+\DoxyCodeLine{00443\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_edge}{newDistance}}\ =\ \mbox{\hyperlink{class_edge}{distance}}[\mbox{\hyperlink{class_edge}{currentVertex}}]\ +\ 1;}
+\DoxyCodeLine{00444\ }
+\DoxyCodeLine{00445\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{class_edge}{newDistance}}\ <\ \mbox{\hyperlink{class_edge}{distance}}[\mbox{\hyperlink{class_edge}{neighbor}}])\ \{}
+\DoxyCodeLine{00446\ }
+\DoxyCodeLine{00447\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_edge}{distance}}[\mbox{\hyperlink{class_edge}{neighbor}}]\ =\ \mbox{\hyperlink{class_edge}{newDistance}};}
+\DoxyCodeLine{00448\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_edge}{anteriores}}[\mbox{\hyperlink{class_edge}{neighbor}}]\ =\ \{\{\mbox{\hyperlink{class_edge}{currentVertex}},\ \mbox{\hyperlink{class_edge}{edge}}\}\};}
+\DoxyCodeLine{00449\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_edge}{pq}}.push(\mbox{\hyperlink{class_edge}{make\_pair}}(\mbox{\hyperlink{class_edge}{newDistance}},\ \mbox{\hyperlink{class_edge}{neighbor}}));}
+\DoxyCodeLine{00450\ }
+\DoxyCodeLine{00451\ \ \ \ \ \ \ \ \ \ \ \ \ \}\ \textcolor{keywordflow}{else}\ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{class_edge}{newDistance}}\ ==\ \mbox{\hyperlink{class_edge}{distance}}[\mbox{\hyperlink{class_edge}{neighbor}}])\ \{}
+\DoxyCodeLine{00452\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_edge}{anteriores}}[\mbox{\hyperlink{class_edge}{neighbor}}].push\_back(\{\mbox{\hyperlink{class_edge}{currentVertex}},\ \mbox{\hyperlink{class_edge}{edge}}\});}
+\DoxyCodeLine{00453\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00454\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00455\ \ \ \ \ \}}
+\DoxyCodeLine{00456\ }
+\DoxyCodeLine{00457\ \ \ \ \ \mbox{\hyperlink{class_edge}{vector<pair<Vertex<T>}}*,\ \mbox{\hyperlink{class_edge}{Edge<T>}}>>\ \mbox{\hyperlink{class_edge}{currentPath}};}
+\DoxyCodeLine{00458\ \ \ \ \ \mbox{\hyperlink{class_graph_a961ec28ac879828ef886ef91e4232683}{construirCaminhosEdges}}(\mbox{\hyperlink{class_edge}{sourceVertex}},\ \mbox{\hyperlink{class_edge}{destVertex}},\ \mbox{\hyperlink{class_edge}{anteriores}},\ \mbox{\hyperlink{class_edge}{currentPath}},\ \mbox{\hyperlink{class_edge}{paths}});}
+\DoxyCodeLine{00459\ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{class_edge}{paths}};}
+\DoxyCodeLine{00460\ \}}
+
+\end{DoxyCode}
+\Hypertarget{class_graph_ae52985e28e98d009399f3f397a15a29e}\label{class_graph_ae52985e28e98d009399f3f397a15a29e} 
+\index{Graph$<$ T $>$@{Graph$<$ T $>$}!construirCaminhos@{construirCaminhos}}
+\index{construirCaminhos@{construirCaminhos}!Graph$<$ T $>$@{Graph$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{construirCaminhos()}{construirCaminhos()}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{class_edge}{class}} \mbox{\hyperlink{class_edge}{T}} $>$ \\
+\mbox{\hyperlink{class_edge}{void}} \mbox{\hyperlink{class_graph}{Graph}}$<$ \mbox{\hyperlink{class_edge}{T}} $>$\+::construir\+Caminhos (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_vertex}{Vertex}}$<$ \mbox{\hyperlink{class_edge}{T}} $>$ \texorpdfstring{$\ast$}{*}}]{source,  }\item[{\mbox{\hyperlink{class_vertex}{Vertex}}$<$ \mbox{\hyperlink{class_edge}{T}} $>$ \texorpdfstring{$\ast$}{*}}]{destination,  }\item[{\mbox{\hyperlink{class_edge}{const}} \mbox{\hyperlink{class_edge}{unordered\+\_\+map}}$<$ \mbox{\hyperlink{class_vertex}{Vertex}}$<$ \mbox{\hyperlink{class_edge}{T}} $>$ \texorpdfstring{$\ast$}{*}, \mbox{\hyperlink{class_edge}{vector}}$<$ \mbox{\hyperlink{class_vertex}{Vertex}}$<$ \mbox{\hyperlink{class_edge}{T}} $>$ \texorpdfstring{$\ast$}{*} $>$ $>$ \&}]{predecessors,  }\item[{\mbox{\hyperlink{class_edge}{vector}}$<$ \mbox{\hyperlink{class_edge}{T}} $>$ \&}]{current\+Path,  }\item[{\mbox{\hyperlink{class_edge}{vector}}$<$ \mbox{\hyperlink{class_edge}{vector}}$<$ \mbox{\hyperlink{class_edge}{T}} $>$ $>$ \&}]{paths }\end{DoxyParamCaption}) const}
+
+This recursive function constructs paths from the destination vertex back to the source vertex. When the minimum paths of the graph are identified, this function recursively constructs the desired path and places it in the final paths vector. The function begins with a path containing the desired destination.
+
+It utilizes the predecessors map, obtained from previous steps, to identify the preceding vertex in the path. During each recursive call, the most recently found predecessor is added to the current path. Only paths starting from the destination and leading back to the source are added to the paths vector. In the base case, paths are reversed since the desired output represents paths from source to destination and not from destination to source.
+
+Essentially, this function generates all reversed paths leading to the destination vertex. However, only paths terminating at the source are appended to the output vector.
+
+
+\begin{DoxyParams}{Parameters}
+{\em source} & -\/ The starting vertex from which paths are initiated. \\
+\hline
+{\em destination} & -\/ The target destination vertex for which paths are determined. \\
+\hline
+{\em predecessors} & -\/ A map that provides predecessors for each vertex, essential for path reconstruction. \\
+\hline
+{\em current\+Path} & -\/ The ongoing path being constructed during the recursive process. \\
+\hline
+{\em paths} & -\/ A vector accumulating valid paths from the destination back to the source. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00377\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00378\ }
+\DoxyCodeLine{00379\ \ \ \ \ \mbox{\hyperlink{class_edge}{currentPath}}.push\_back(\mbox{\hyperlink{class_edge}{destination}}-\/>getInfo());\ \textcolor{comment}{//adiciona\ o\ predecessor\ que\ foi\ encontrado}}
+\DoxyCodeLine{00380\ }
+\DoxyCodeLine{00381\ \ \ \ \ \textcolor{comment}{//caso\ base,\ em\ que\ chegamos\ ao\ vertice\ inicial}}
+\DoxyCodeLine{00382\ \ \ \ \ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{class_edge}{destination}}\ ==\ \mbox{\hyperlink{class_edge}{source}})\ \{\ \textcolor{comment}{//retorna\ true\ se\ encontrou\ um\ dos\ caminhos\ desejados}}
+\DoxyCodeLine{00383\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_edge}{paths}}.push\_back(\mbox{\hyperlink{class_edge}{currentPath}});}
+\DoxyCodeLine{00384\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_edge}{reverse}}(\mbox{\hyperlink{class_edge}{paths}}.back().begin(),\ \mbox{\hyperlink{class_edge}{paths}}.back().end());}
+\DoxyCodeLine{00385\ \ \ \ \ \ \ \ \ \textcolor{comment}{//inverte\ o\ resultado\ final\ para\ que\ o\ caminho\ nao\ esteja\ ao\ contrário}}
+\DoxyCodeLine{00386\ \ \ \ \ \}\ \textcolor{keywordflow}{else}\ \{}
+\DoxyCodeLine{00387\ \ \ \ \ \ \ \ \ \textcolor{comment}{//caso\ recursivo\ que\ reconstroi\ todos\ os\ caminhos\ invertidos}}
+\DoxyCodeLine{00388\ \ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ \mbox{\hyperlink{class_edge}{vector<Vertex<T>}}*>\&\ \mbox{\hyperlink{class_edge}{preds}}\ =\ \mbox{\hyperlink{class_edge}{predecessors}}.at(\mbox{\hyperlink{class_edge}{destination}});}
+\DoxyCodeLine{00389\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{for}\ (\mbox{\hyperlink{class_edge}{Vertex<T>}}*\ \mbox{\hyperlink{class_edge}{pred}}\ :\ \mbox{\hyperlink{class_edge}{preds}})\ \{}
+\DoxyCodeLine{00390\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_graph_ae52985e28e98d009399f3f397a15a29e}{construirCaminhos}}(\mbox{\hyperlink{class_edge}{source}},\ \mbox{\hyperlink{class_edge}{pred}},\ \mbox{\hyperlink{class_edge}{predecessors}},\ \mbox{\hyperlink{class_edge}{currentPath}},\ \mbox{\hyperlink{class_edge}{paths}});}
+\DoxyCodeLine{00391\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00392\ \ \ \ \ \}}
+\DoxyCodeLine{00393\ }
+\DoxyCodeLine{00394\ \ \ \ \ \mbox{\hyperlink{class_edge}{currentPath}}.pop\_back();}
+\DoxyCodeLine{00395\ \}}
+
+\end{DoxyCode}
+\Hypertarget{class_graph_a961ec28ac879828ef886ef91e4232683}\label{class_graph_a961ec28ac879828ef886ef91e4232683} 
+\index{Graph$<$ T $>$@{Graph$<$ T $>$}!construirCaminhosEdges@{construirCaminhosEdges}}
+\index{construirCaminhosEdges@{construirCaminhosEdges}!Graph$<$ T $>$@{Graph$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{construirCaminhosEdges()}{construirCaminhosEdges()}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{class_edge}{class}} \mbox{\hyperlink{class_edge}{T}} $>$ \\
+\mbox{\hyperlink{class_edge}{void}} \mbox{\hyperlink{class_graph}{Graph}}$<$ \mbox{\hyperlink{class_edge}{T}} $>$\+::construir\+Caminhos\+Edges (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_vertex}{Vertex}}$<$ \mbox{\hyperlink{class_edge}{T}} $>$ \texorpdfstring{$\ast$}{*}}]{source,  }\item[{\mbox{\hyperlink{class_vertex}{Vertex}}$<$ \mbox{\hyperlink{class_edge}{T}} $>$ \texorpdfstring{$\ast$}{*}}]{destination,  }\item[{\mbox{\hyperlink{class_edge}{const}} \mbox{\hyperlink{class_edge}{unordered\+\_\+map}}$<$ \mbox{\hyperlink{class_vertex}{Vertex}}$<$ \mbox{\hyperlink{class_edge}{T}} $>$ \texorpdfstring{$\ast$}{*}, \mbox{\hyperlink{class_edge}{vector}}$<$ \mbox{\hyperlink{class_edge}{pair}}$<$ \mbox{\hyperlink{class_vertex}{Vertex}}$<$ \mbox{\hyperlink{class_edge}{T}} $>$ \texorpdfstring{$\ast$}{*}, \mbox{\hyperlink{class_edge}{Edge}}$<$ \mbox{\hyperlink{class_edge}{T}} $>$ $>$ $>$ $>$ \&}]{predecessors,  }\item[{\mbox{\hyperlink{class_edge}{vector}}$<$ \mbox{\hyperlink{class_edge}{pair}}$<$ \mbox{\hyperlink{class_vertex}{Vertex}}$<$ \mbox{\hyperlink{class_edge}{T}} $>$ \texorpdfstring{$\ast$}{*}, \mbox{\hyperlink{class_edge}{Edge}}$<$ \mbox{\hyperlink{class_edge}{T}} $>$ $>$ $>$ \&}]{current\+Path,  }\item[{\mbox{\hyperlink{class_edge}{vector}}$<$ \mbox{\hyperlink{class_edge}{vector}}$<$ \mbox{\hyperlink{class_edge}{pair}}$<$ \mbox{\hyperlink{class_vertex}{Vertex}}$<$ \mbox{\hyperlink{class_edge}{T}} $>$ \texorpdfstring{$\ast$}{*}, \mbox{\hyperlink{class_edge}{Edge}}$<$ \mbox{\hyperlink{class_edge}{T}} $>$ $>$ $>$ $>$ \&}]{paths }\end{DoxyParamCaption}) const}
+
+Version that constructs paths similarly, but with Edges associated with Vertices.
+
+
+\begin{DoxyParams}{Parameters}
+{\em source} & -\/ The starting vertex of the paths being constructed. \\
+\hline
+{\em destination} & -\/ The ending vertex of the paths being constructed. \\
+\hline
+{\em predecessors} & -\/ A map that provides predecessors for each vertex to reconstruct the path. \\
+\hline
+{\em current\+Path} & -\/ The current path being constructed during the recursive process. \\
+\hline
+{\em paths} & -\/ A vector that accumulates valid paths from the destination back to the source. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00473\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00474\ }
+\DoxyCodeLine{00475\ \ \ \ \ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{class_edge}{destination}}\ ==\ \mbox{\hyperlink{class_edge}{source}})\ \{}
+\DoxyCodeLine{00476\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_edge}{paths}}.push\_back(\mbox{\hyperlink{class_edge}{currentPath}});}
+\DoxyCodeLine{00477\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_edge}{reverse}}(\mbox{\hyperlink{class_edge}{paths}}.back().begin(),\ \mbox{\hyperlink{class_edge}{paths}}.back().end());}
+\DoxyCodeLine{00478\ }
+\DoxyCodeLine{00479\ \ \ \ \ \}\ \textcolor{keywordflow}{else}\ \{}
+\DoxyCodeLine{00480\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{for}\ (\textcolor{keyword}{const}\ \textcolor{keyword}{auto}\&\ \mbox{\hyperlink{class_edge}{pred}}\ :\ \mbox{\hyperlink{class_edge}{predecessors}}.\mbox{\hyperlink{class_edge}{at}}(\mbox{\hyperlink{class_edge}{destination}}))\ \{}
+\DoxyCodeLine{00481\ }
+\DoxyCodeLine{00482\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ \mbox{\hyperlink{class_edge}{Edge<T>}}\&\ \mbox{\hyperlink{class_edge}{edge}}\ =\ \mbox{\hyperlink{class_edge}{pred}}.second;}
+\DoxyCodeLine{00483\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_edge}{currentPath}}.push\_back(\{\mbox{\hyperlink{class_edge}{destination}},\ \mbox{\hyperlink{class_edge}{edge}}\});}
+\DoxyCodeLine{00484\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_graph_a961ec28ac879828ef886ef91e4232683}{construirCaminhosEdges}}(\mbox{\hyperlink{class_edge}{source}},\ \mbox{\hyperlink{class_edge}{pred}}.first,\ \mbox{\hyperlink{class_edge}{predecessors}},\ \mbox{\hyperlink{class_edge}{currentPath}},\ \mbox{\hyperlink{class_edge}{paths}});}
+\DoxyCodeLine{00485\ }
+\DoxyCodeLine{00486\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_edge}{currentPath}}.pop\_back();}
+\DoxyCodeLine{00487\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00488\ \ \ \ \ \}}
+\DoxyCodeLine{00489\ \}}
+
+\end{DoxyCode}
+\Hypertarget{class_graph_a911798b1a89f8c4ae90ba3eee849cff8}\label{class_graph_a911798b1a89f8c4ae90ba3eee849cff8} 
+\index{Graph$<$ T $>$@{Graph$<$ T $>$}!dfs@{dfs}}
+\index{dfs@{dfs}!Graph$<$ T $>$@{Graph$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{dfs()}{dfs()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{class_edge}{class}} \mbox{\hyperlink{class_edge}{T}} $>$ \\
+\mbox{\hyperlink{class_edge}{vector}}$<$ \mbox{\hyperlink{class_edge}{T}} $>$ \mbox{\hyperlink{class_graph}{Graph}}$<$ \mbox{\hyperlink{class_edge}{T}} $>$\+::dfs (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00206\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00207\ \ \ \ \ \mbox{\hyperlink{class_edge}{vector<T>}}\ \mbox{\hyperlink{class_edge}{res}};}
+\DoxyCodeLine{00208\ \ \ \ \ \textcolor{keywordflow}{for}\ (\textcolor{keyword}{auto}\ \mbox{\hyperlink{class_edge}{v}}\ :\ vertexSet)\ \{}
+\DoxyCodeLine{00209\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_edge}{v}}-\/>setVisited(\textcolor{keyword}{false});}
+\DoxyCodeLine{00210\ \ \ \ \ \}}
+\DoxyCodeLine{00211\ \ \ \ \ \textcolor{keywordflow}{for}\ (\textcolor{keyword}{auto}\ \mbox{\hyperlink{class_edge}{v}}\ :\ vertexSet)\ \{}
+\DoxyCodeLine{00212\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (!\mbox{\hyperlink{class_edge}{v}}-\/>isVisited())\ \{}
+\DoxyCodeLine{00213\ \ \ \ \ \ \ \ \ \ \ \ \ dfsVisit(\mbox{\hyperlink{class_edge}{v}},\ \mbox{\hyperlink{class_edge}{res}});}
+\DoxyCodeLine{00214\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00215\ \ \ \ \ \}}
+\DoxyCodeLine{00216\ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{class_edge}{res}};}
+\DoxyCodeLine{00217\ \}}
+
+\end{DoxyCode}
+\Hypertarget{class_graph_a510522c8221b321a82e687fe2f2cb484}\label{class_graph_a510522c8221b321a82e687fe2f2cb484} 
+\index{Graph$<$ T $>$@{Graph$<$ T $>$}!dfs@{dfs}}
+\index{dfs@{dfs}!Graph$<$ T $>$@{Graph$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{dfs()}{dfs()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{class_edge}{class}} \mbox{\hyperlink{class_edge}{T}} $>$ \\
+\mbox{\hyperlink{class_edge}{vector}}$<$ \mbox{\hyperlink{class_edge}{T}} $>$ \mbox{\hyperlink{class_graph}{Graph}}$<$ \mbox{\hyperlink{class_edge}{T}} $>$\+::dfs (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_edge}{const}} \mbox{\hyperlink{class_edge}{T}} \&}]{source }\end{DoxyParamCaption}) const}
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00236\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00237\ \ \ \ \ \mbox{\hyperlink{class_edge}{vector<T>}}\ \mbox{\hyperlink{class_edge}{res}};}
+\DoxyCodeLine{00238\ \ \ \ \ \textcolor{keywordflow}{for}\ (\textcolor{keyword}{auto}\ \mbox{\hyperlink{class_edge}{v}}\ :\ vertexSet)\{}
+\DoxyCodeLine{00239\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_edge}{v}}-\/>setVisited(\textcolor{keyword}{false});}
+\DoxyCodeLine{00240\ \ \ \ \ \}}
+\DoxyCodeLine{00241\ }
+\DoxyCodeLine{00242\ \ \ \ \ \mbox{\hyperlink{class_edge}{Vertex<T>}}*\ \mbox{\hyperlink{class_edge}{fonte}}\ =\ \mbox{\hyperlink{class_graph_a8b7b7465fbfd562e2a469f90a437ab75}{findVertex}}(\mbox{\hyperlink{class_edge}{source}});}
+\DoxyCodeLine{00243\ \ \ \ \ dfsVisit(\mbox{\hyperlink{class_edge}{fonte}},\mbox{\hyperlink{class_edge}{res}});}
+\DoxyCodeLine{00244\ }
+\DoxyCodeLine{00245\ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{class_edge}{res}};}
+\DoxyCodeLine{00246\ \}}
+
+\end{DoxyCode}
+\Hypertarget{class_graph_a8b7b7465fbfd562e2a469f90a437ab75}\label{class_graph_a8b7b7465fbfd562e2a469f90a437ab75} 
+\index{Graph$<$ T $>$@{Graph$<$ T $>$}!findVertex@{findVertex}}
+\index{findVertex@{findVertex}!Graph$<$ T $>$@{Graph$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{findVertex()}{findVertex()}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{class_edge}{class}} \mbox{\hyperlink{class_edge}{T}} $>$ \\
+\mbox{\hyperlink{class_vertex}{Vertex}}$<$ \mbox{\hyperlink{class_edge}{T}} $>$ \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_graph}{Graph}}$<$ \mbox{\hyperlink{class_edge}{T}} $>$\+::find\+Vertex (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_edge}{const}} \mbox{\hyperlink{class_edge}{T}} \&}]{in }\end{DoxyParamCaption}) const}
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00133\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00134\ \ \ \ \ \textcolor{keywordflow}{for}\ (\textcolor{keyword}{auto}\ \mbox{\hyperlink{class_edge}{v}}\ :\ vertexSet)}
+\DoxyCodeLine{00135\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_edge}{if}}\ (\mbox{\hyperlink{class_edge}{v}}-\/>info\ ==\ \mbox{\hyperlink{class_edge}{in}})}
+\DoxyCodeLine{00136\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_edge}{return}}\ \mbox{\hyperlink{class_edge}{v}};}
+\DoxyCodeLine{00137\ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{class_edge}{NULL}};}
+\DoxyCodeLine{00138\ \}}
+
+\end{DoxyCode}
+\Hypertarget{class_graph_a923b43995f81ad9319bbc81a1e433e64}\label{class_graph_a923b43995f81ad9319bbc81a1e433e64} 
+\index{Graph$<$ T $>$@{Graph$<$ T $>$}!getVertexSet@{getVertexSet}}
+\index{getVertexSet@{getVertexSet}!Graph$<$ T $>$@{Graph$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{getVertexSet()}{getVertexSet()}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{class_edge}{class}} \mbox{\hyperlink{class_edge}{T}} $>$ \\
+\mbox{\hyperlink{class_edge}{vector}}$<$ \mbox{\hyperlink{class_vertex}{Vertex}}$<$ \mbox{\hyperlink{class_edge}{T}} $>$ \texorpdfstring{$\ast$}{*} $>$ \mbox{\hyperlink{class_graph}{Graph}}$<$ \mbox{\hyperlink{class_edge}{T}} $>$\+::get\+Vertex\+Set (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00113\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00114\ \ \ \ \ \textcolor{keywordflow}{return}\ vertexSet;}
+\DoxyCodeLine{00115\ \}}
+
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_graph_8h}{Graph.\+h}}\end{DoxyCompactItemize}

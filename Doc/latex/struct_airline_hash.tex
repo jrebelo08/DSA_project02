@@ -1,0 +1,57 @@
+\doxysection{Airline\+Hash Struct Reference}
+\hypertarget{struct_airline_hash}{}\label{struct_airline_hash}\index{AirlineHash@{AirlineHash}}
+
+
+Hashing struct for \doxylink{class_airline}{Airline} objects.  
+
+
+
+
+{\ttfamily \#include $<$Airline.\+h$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_edge}{size\+\_\+t}} \mbox{\hyperlink{struct_airline_hash_a809c71dc0f50f2cbdb7ead70a0da423d}{operator()}} (\mbox{\hyperlink{class_edge}{const}} \mbox{\hyperlink{class_airline}{Airline}} \&\mbox{\hyperlink{class_edge}{airline}}) \mbox{\hyperlink{class_edge}{const}}
+\begin{DoxyCompactList}\small\item\em Computes the hash value for a given \doxylink{class_airline}{Airline} object. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Hashing struct for \doxylink{class_airline}{Airline} objects. 
+
+This struct provides a hash function for \doxylink{class_airline}{Airline} objects by combining hashes of its individual attributes. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{struct_airline_hash_a809c71dc0f50f2cbdb7ead70a0da423d}\label{struct_airline_hash_a809c71dc0f50f2cbdb7ead70a0da423d} 
+\index{AirlineHash@{AirlineHash}!operator()@{operator()}}
+\index{operator()@{operator()}!AirlineHash@{AirlineHash}}
+\doxysubsubsection{\texorpdfstring{operator()()}{operator()()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_edge}{size\+\_\+t}} Airline\+Hash\+::operator() (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_edge}{const}} \mbox{\hyperlink{class_airline}{Airline}} \&}]{airline }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Computes the hash value for a given \doxylink{class_airline}{Airline} object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em airline} & The \doxylink{class_airline}{Airline} object to compute the hash for. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A size\+\_\+t value representing the hash of the airline. 
+\end{DoxyReturn}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00078\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00079\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{class_edge}{hash<string>}}()(\mbox{\hyperlink{class_edge}{airline}}.getCode())}
+\DoxyCodeLine{00080\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \string^\ \mbox{\hyperlink{class_edge}{hash<string>}}()(\mbox{\hyperlink{class_edge}{airline}}.getName())}
+\DoxyCodeLine{00081\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \string^\ \mbox{\hyperlink{class_edge}{hash<string>}}()(\mbox{\hyperlink{class_edge}{airline}}.getCallsign())}
+\DoxyCodeLine{00082\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \string^\ \mbox{\hyperlink{class_edge}{hash<string>}}()(\mbox{\hyperlink{class_edge}{airline}}.getCountry());}
+\DoxyCodeLine{00083\ \ \ \ \ \}}
+
+\end{DoxyCode}
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_airline_8h}{Airline.\+h}}\end{DoxyCompactItemize}
